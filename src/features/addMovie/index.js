@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Paper, InputBase, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useGetMoviesMutation } from '../../services/movieApi';
+import MovieSearchResult from '../../components/MovieSearchResult';
 
 const AddMovie = () => {
   const [query, setQuery] = useState("");
@@ -47,7 +48,7 @@ const AddMovie = () => {
       </Paper>
       <div className="results">
         {movies?.results?.length > 0 &&
-          movies?.results?.map((movie) => <li>{movie.title}</li>)}
+          movies?.results?.map((movie) => <MovieSearchResult key={movie.id} movie={movie} />)}
       </div>
     </div>
   )
