@@ -23,16 +23,15 @@ This is a movie watchlist application using React, Redux-Toolkit, RTK-Query & Re
 <li>Created custom slices as Hooks to process Movie Adding, Editing and Deleting Functions</li>
 
 <h2>Hooks Used:</h2>
-<li>React hooks throughout the project including; useEffect, useState, Link</li>
-<li>Redux Hooks used; persistReducer, combineReducer, useDispatch, useSelector</li>
-<li>MUI Hooks: AppBar, Box, Toolbar, Typography, Button, styled, Card, CardMedia, Stack, Grid </li>
-<li>API Hooks: </li>
-<li>Custom Slices Hooks: addMovieToWatched, removeMovieFromWatchList, moveToWatchList, removeMovieFromWatched</li>
+<li>React Hooks: useEffect, useState, Link</li>
+<li>React Router Dom Hooks: BrowserRouter, Routes, Route</li
 <li>React Moment Hooks: Moment</li>
+<li>Redux Hooks used: persistReducer, combineReducer, useDispatch, useSelector, createSlice, createApi, fetchBaseQuery</li>
+<li>MUI Hooks: AppBar, Box, Toolbar, Typography, Button, styled, Card, CardMedia, Stack, Grid, Paper, InputBase, IconButton, Search Icon,Typography, Container </li>
+<li>Tmdb API Hooks: useGetMoviesMutation </li>
+<li>Custom Slices Hooks: addMovieToWatched, removeMovieFromWatchList, moveToWatchList, removeMovieFromWatched, selectAllWatchedMovies</li>
 
 <h2>Future work</h2>
 <li>Improve UI</li>
-<li>Introduce Filtering through contacts and sorting contacts serverside by name/front-end using widgets.</li>
-<li>Use Firestore database</li>
-<li>Introduce login features</li>
+<li>Introduce User Logins, to store information further and create recommendations based on Movies in current watchlist</li>
 <li>Introduce authentication features</li>
