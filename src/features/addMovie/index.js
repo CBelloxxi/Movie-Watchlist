@@ -12,6 +12,7 @@ const AddMovie = () => {
     if(query) {
       fetchMovie()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
 
   const fetchMovie = async () => {

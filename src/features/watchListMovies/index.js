@@ -3,6 +3,7 @@ import { Typography, Container } from "@mui/material";
 import { useSelector } from "react-redux";
 import { selectAllWatchListMovies } from '../addMovie/moviesSlice';
 import MovieGrid from "../../components/MovieGrid";
+import Message from '../../components/Message';
 
 const WatchListMovies = () => {
   const watchListMovies = useSelector(selectAllWatchListMovies)
@@ -15,11 +16,11 @@ const WatchListMovies = () => {
       </Typography>
       {watchListMovies.length > 0 ? (
         <>
-          <MovieGrid movies={watchListMovies} />
+          <MovieGrid movies={watchListMovies}  type="watchList"/>
         </>
       ) : (
         <>
-          <h2>Please Add Movie</h2>
+          <Message title={"Please Add Your Favourite Movies into Watchlist "}/>
         </>
       )}
     </Container>
