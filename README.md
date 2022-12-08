@@ -1,3 +1,3 @@
 <h1> Movie Watchlist App </h1>
 
-build movie watchlist application using the technology like  React, Redux-Toolkit, RTK-Query & Redux-Persist. We will be using external API https://developers.themoviedb.org/3/s... in order to fetch movie.
+This is a movie watchlist application using React, Redux-Toolkit, RTK-Query & Redux-Persist. Also, I have used an external API https://developers.themoviedb.org/3/s in order to fetch the movies.
