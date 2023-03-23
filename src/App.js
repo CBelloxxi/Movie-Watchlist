@@ -6,8 +6,6 @@ import WatchedMovies from './features/watchedMovies';
 import './App.css';
 import Header from './components/Header';
 
-const apiKey = process.env.REACT_APP_API_KEY;
-
 function App() {
   return (
     <BrowserRouter>
